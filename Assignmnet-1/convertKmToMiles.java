@@ -1,6 +1,5 @@
-package basicQuestion3F;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class convertKmToMiles {
     public static void main(String[] args) {

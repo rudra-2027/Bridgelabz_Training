@@ -1,6 +1,5 @@
-package basicQuestion3F;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class averageOfThree {
     public static void main(String[] args) {
@@ -8,7 +7,7 @@ public class averageOfThree {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        int avg = (a+b+c)/3;
+        int avg = (a + b + c) / 3;
         System.out.println(avg);
     }
 }
