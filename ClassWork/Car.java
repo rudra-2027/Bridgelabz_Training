@@ -1,31 +1,30 @@
 package Bridgelabz_Training.ClassWork;
 
 public class Car {
-  static int cnt;
+
   String model;
   int year;
 
-  public Car(String model, int year) {
-    this.model = model;
-    this.year = year;
-    cnt++;
-  }
+  // public Car(String model, int year) {
+  // this.model = model;
+  // this.year = year;
+  // cnt++;
+  // }
 
   public void details() {
-    System.out.println(model + " " + year);
-  }
-
-  public static void returnNumberOfObject() {
-    System.out.println(cnt);
+    System.out.println(this.model + " " + this.year);
   }
 
   public static void main(String[] args) {
-    Car car1 = new Car("BMW", 1988);
-    Car car2 = new Car("AUDI", 2001);
+    Car car1 = new Car();
+    Car car2 = new Car();
+    car1.model = "BMW";
+    car1.year = 1988;
+    car2.model = "Audi";
+    car2.year = 2001;
+
     car1.details();
     car2.details();
-    // System.out.println(cnt);
-    Car.returnNumberOfObject();
 
   }
 }
