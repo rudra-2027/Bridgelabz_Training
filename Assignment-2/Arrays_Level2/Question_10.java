@@ -15,7 +15,6 @@ public class Question_10 {
       temp /= 10;
     }
 
-    // Display frequencies
     System.out.println("\nFrequency of lasts in " + number + ":");
     for (int i = 0; i < 10; i++) {
       if (frequency[i] > 0) {
