@@ -1,4 +1,4 @@
-package Bridgelabz_Training.Assignment-2. String_Level_1;
+package Bridgelabz_Training.Assignment-2.String_Level_1;
 
 import java.util.Scanner;
 
