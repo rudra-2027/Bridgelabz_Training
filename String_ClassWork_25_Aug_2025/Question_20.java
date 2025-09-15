@@ -17,13 +17,13 @@ public class Question_20 {
 	}
 
 	public static String[] mySplit(String str) {
-		int cntSpace = 1;
+		int cnt = 1;
 		for (int i = 0; i < str.length(); i++) {
 			if (str.charAt(i) == ' ') {
-				cntSpace++;
+				cnt++;
 			}
 		}
-		String[] result = new String[cntSpace];
+		String[] result = new String[cnt];
 		String temp = "";
 		int idx = 0;
 		for (char c : str.toCharArray()) {

@@ -10,29 +10,29 @@ public class Question_27 {
         System.out.print("Enter string 1: ");
         String str = sc.nextLine();
         System.out.print("Enter replace Value From: ");
-        String from = sc.nextLine();
-        System.out.print("Enter replace Value To: ");
-        String to = sc.nextLine();
+        String start = sc.nextLine();
+        System.out.print("Enter replace Value end: ");
+        String end = sc.nextLine();
 
-        String rec = replace(str, from, to);
+        String rec = replace(str, start, end);
         System.out.println(rec);
     }
 
-    public static String replace(String str, String from, String to) {
+    public static String replace(String str, String start, String end) {
         String result = "";
         int i = 0;
         while (i < str.length()) {
             boolean match = true;
-            for (int j = 0; j < from.length(); j++) {
-                if (i + j >= str.length() || str.charAt(i + j) != from.charAt(j)) {
+            for (int j = 0; j < start.length(); j++) {
+                if (i + j >= str.length() || str.charAt(i + j) != start.charAt(j)) {
                     match = false;
                     break;
                 }
             }
 
             if (match) {
-                result += to;
-                i += from.length();
+                result += end;
+                i += start.length();
             } else {
                 result += str.charAt(i);
                 i++;

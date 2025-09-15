@@ -8,7 +8,7 @@ public class Queston_10 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter string: ");
         String str = sc.nextLine();
-        String result = "";
+        String res = "";
         String word = "";
 
         for (int i = 0; i < str.length(); i++) {
@@ -17,13 +17,13 @@ public class Queston_10 {
             if (c != ' ') {
                 word = c + word;
             } else {
-                result += word + " ";
+                res += word + " ";
                 word = "";
             }
         }
 
-        result += word;
+        res += word;
 
-        System.out.println("Reversed words: " + result);
+        System.out.println("Reversed words: " + res);
     }
 }

@@ -4,7 +4,7 @@ package Bridgelabz_Training.String_ClassWork_25_Aug_2025;
 import java.util.*;
 
 public class Question_23 {
-	public static boolean haveSame(String s1, String s2) {
+	public static boolean check(String s1, String s2) {
 		if (s1.length() != s2.length()) {
 			return false;
 		}
@@ -21,7 +21,7 @@ public class Question_23 {
 		String str = sc.nextLine();
 		System.out.print("Enter string 2: ");
 		String str2 = sc.nextLine();
-		if (haveSame(str, str2)) {
+		if (check(str, str2)) {
 			System.out.println("Have Same Set");
 		} else {
 			System.out.println("Have Different Set");

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // Check if a string is a valid shuffle of two other strings.
 public class Question_26 {
-	public static boolean isShuffle(String str, String str2, String res) {
+	public static boolean check(String str, String str2, String res) {
 		if (str.length() + str2.length() != res.length()) {
 			return false;
 		}
@@ -36,7 +36,7 @@ public class Question_26 {
 		String str2 = sc.nextLine();
 		System.out.print("Enter result string: ");
 		String result = sc.nextLine();
-		if (isShuffle(str, str2, result)) {
+		if (check(str, str2, result)) {
 			System.out.println("Shuffled");
 		} else {
 			System.out.println("Not A Shuffled");
