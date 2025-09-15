@@ -2,6 +2,16 @@ package Object_Modeling;
 
 import java.util.ArrayList;
 import java.util.List;
+//Self Problems
+//Problem 1: School and Students with Courses (Association and Aggregation)
+//Description: Model a School with multiple Student objects, where each student can enroll in multiple courses,
+//and each course can have multiple students.
+//Tasks:
+//Define School, Student, and Course classes.
+//Model an association between Student and Course to show that students can enroll in multiple courses.
+//Model an aggregation relationship between School and Student.
+//Demonstrate how a student can view the courses they are enrolled in and how a course can show its enrolled students.
+//Goal: Practice association by modeling many-to-many relationships between students and courses.
 
 public class School {
     private String schoolName;
@@ -31,11 +41,11 @@ public class School {
         Student rahul = new Student("Rahul");
         Student bob = new Student("Bob");
 
-        rahul.enrollCourse(math);
-        rahul.enrollCourse(science);
+        rahul.enroll(math);
+        rahul.enroll(science);
 
-        bob.enrollCourse(science);
-        bob.enrollCourse(history);
+        bob.enroll(science);
+        bob.enroll(history);
 
         School school = new School("GLASchool");
         school.addStudent(rahul);
@@ -57,7 +67,7 @@ class Student {
         this.courses = new ArrayList<>();
     }
 
-    public void enrollCourse(Course c) {
+    public void enroll(Course c) {
         courses.add(c);
         c.addStudent(this);
     }
@@ -91,7 +101,7 @@ class Course {
     }
 
     public void display() {
-        System.out.print("Course: " + courseName + " | Students: ");
+        System.out.print("Course: " + courseName + "  Students: ");
         for (Student s : students) {
             System.out.print(s.getName() + " ");
         }
