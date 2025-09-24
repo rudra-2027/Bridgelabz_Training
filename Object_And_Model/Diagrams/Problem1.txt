@@ -1,0 +1,20 @@
+1. Class Diagram
+ The class diagram represents the structure of a school results application where students have subjects, and their scores are calculated for grades.
+ Diagram Description:
+  Classes: Student, Subject, GradeCalculator
+Relationships:
+  A Student has multiple Subject entries (Aggregation).
+  GradeCalculator computes the results for a Student.
+→ Draw the Class Diagram
+
+
+Class Diagram
+
+Student:              |           Subject:      |       GradeCalculator:                              
+  -StudentId(String)  |----/\-----> -SubjectName |----->       -SubjectMarks: CalualteGrade 
+  -Name(String)       |    \/       -ScoreDouble |
+  -StudentGrade                                                                     /\
+         |                   |                                                       |
+         |                   |-> one student have many subject                       |
+         |                                                                           | 
+         |---------------------------------------------------------------------------|
